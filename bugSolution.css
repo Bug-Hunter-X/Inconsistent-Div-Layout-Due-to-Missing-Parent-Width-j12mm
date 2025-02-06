@@ -1,0 +1,14 @@
+The solution is to set the width of the parent container. Here's the corrected CSS:
+
+```css
+.parent {
+  width: 100%; /* or a specific width */
+}
+div {
+  width: 50%;
+  float: left;
+  box-sizing: border-box; /*optional, for better control of width including padding and border*/
+}
+```
+
+By setting the parent's width, we guarantee that the divs will be able to use 50% of that width correctly, resulting in the expected horizontal layout.
